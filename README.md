@@ -1,2 +1,3 @@
-# StudioComponents
-Re-upload of roblox-ts bindings, since NPM version is corrupted.
+Help and documentation can be found at:
+
+https://sircfenner.github.io/StudioComponents/
