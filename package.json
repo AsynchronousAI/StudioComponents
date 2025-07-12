@@ -33,7 +33,8 @@
 		"roblox-ts": "^2.3.0",
 		"typescript": "^5.5.4"
 	},
-	"dependencies": {
+
+	"peerDependencies": {
 		"@rbxts/pretty-react-hooks": "^0.6.0",
 		"@rbxts/react": "^0.4.0",
 		"@rbxts/react-roblox": "^0.4.0"
