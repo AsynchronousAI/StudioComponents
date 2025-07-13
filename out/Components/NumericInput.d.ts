@@ -20,4 +20,4 @@ export interface Props extends NumericInputProps {
 	OnFocusLost?: (text: string, enterPressed: boolean, input: InputObject) => void;
 }
 
-export default function NumericInput(props: NumericInputProps): JSX.Element;
+export function NumericInput(props: NumericInputProps): JSX.Element;
