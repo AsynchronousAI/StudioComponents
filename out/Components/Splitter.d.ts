@@ -9,6 +9,7 @@ type ISplitterProps<T> = {
 	MinAlpha?: number;
 	MaxAlpha?: number;
 	Orientation?: "Horizontal" | "Vertical";
+	FillDirection?: Enum.FillDirection;
 } & CommonProps &
 	Partial<Pick<Frame, "Size" | "Position" | "AnchorPoint" | "ZIndex" | "LayoutOrder">>;
 
