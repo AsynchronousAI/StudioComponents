@@ -114,6 +114,7 @@ local function ProgressBar(props: ProgressBarProps)
 				TextColor3 = Color3.fromRGB(12, 12, 12),
 				TextTransparency = if props.Disabled then 0.5 else 0,
 				Text = text,
+				ZIndex = 2,
 			}),
 		}),
 		Under = React.createElement("TextLabel", {
