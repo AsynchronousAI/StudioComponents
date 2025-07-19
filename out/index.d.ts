@@ -22,3 +22,4 @@ export * from "./Components/Foundation";
 export * from "./Components/Dropdown";
 export * from "./Components/NumberSequencePicker";
 export * from "./Components/PluginProvider";
+export * from "./Contexts/PluginContext";
