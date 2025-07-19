@@ -36,6 +36,4 @@ export interface PluginProviderProps {
  * @param props The props for PluginProvider
  * @returns A React element
  */
-declare function PluginProvider(props: PluginProviderProps): React.Element;
-
-export = PluginProvider;
+export function PluginProvider(props: PluginProviderProps): JSX.Element;
