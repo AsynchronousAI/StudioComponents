@@ -3,7 +3,7 @@ import { CommonProps } from "../CommonProps";
 
 type ISplitterProps<T> = {
 	Alpha: number;
-	OnAlphaChanged: (alpha: number) => void;
+	OnChanged: (alpha: number) => void;
 	Disabled?: boolean;
 	Size?: UDim2;
 	MinAlpha?: number;
