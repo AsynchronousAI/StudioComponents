@@ -6,10 +6,7 @@ type IScrollFrame = CommonProps &
 		{
 			Disabled: boolean;
 			OnScrolled: (pos: Vector2) => void;
-			Layout: {
-				ClassName?: string;
-				SortOrder?: Enum.SortOrder.LayoutOrder;
-			};
+			Layout: Partial<UIListLayout>;
 			PaddingLeft?: UDim;
 			PaddingRight?: UDim;
 			PaddingTop?: UDim;
