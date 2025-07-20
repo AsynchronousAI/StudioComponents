@@ -11,6 +11,8 @@ interface ICheckboxProps extends CommonProps {
 	ZIndex?: Frame["ZIndex"];
 	Position?: Frame["Position"];
 	RichText?: TextLabel["RichText"];
+	ContentAlignment?: Enum.HorizontalAlignment;
+	ButtonAlignment?: Enum.HorizontalAlignment;
 }
 
 export const Checkbox: (props: ICheckboxProps) => Element;
