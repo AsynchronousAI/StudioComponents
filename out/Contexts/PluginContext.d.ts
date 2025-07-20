@@ -6,7 +6,7 @@ import { Context } from "@rbxts/react";
  * The structure of the PluginContext, which provides plugin-related
  * utilities to components in the React tree.
  */
-export interface PluginContextValue {
+interface PluginContextValue {
 	/** The plugin instance (usually the global `plugin`). */
 	plugin: Plugin;
 
@@ -22,4 +22,4 @@ export interface PluginContextValue {
  * the component tree. This context is `undefined` if not wrapped in a PluginProvider.
  */
 declare const PluginContext: Context<PluginContextValue | undefined>;
-export default PluginContext;
+export = PluginContext;
