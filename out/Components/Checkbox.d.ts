@@ -2,7 +2,7 @@ import { Element } from "@rbxts/react";
 import { CommonProps } from "../CommonProps";
 
 interface ICheckboxProps extends CommonProps {
-	OnActivated: () => void;
+	OnChanged: () => void;
 	Disabled?: boolean;
 	Value?: boolean | "Indeterminate";
 	Label?: string;
