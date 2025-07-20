@@ -21,4 +21,5 @@ export interface PluginContextValue {
  * React context that provides access to the PluginContext throughout
  * the component tree. This context is `undefined` if not wrapped in a PluginProvider.
  */
-export const PluginContext: Context<PluginContextValue | undefined>;
+declare const PluginContext: Context<PluginContextValue | undefined>;
+export default PluginContext;
