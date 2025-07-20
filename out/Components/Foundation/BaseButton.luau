@@ -90,6 +90,7 @@ local function BaseButton(props: BaseButtonProps)
 		ZIndex = props.ZIndex,
 		Text = "",
 		BackgroundColor3 = backColor,
+		BackgroundTransparency = .2,
 		BorderColor3 = borderColor3,
 		[React.Event.InputBegan] = function(_, input)
 			if input.UserInputType == Enum.UserInputType.MouseMovement then
@@ -117,6 +118,15 @@ local function BaseButton(props: BaseButtonProps)
 			FillDirection = Enum.FillDirection.Horizontal,
 			HorizontalAlignment = Enum.HorizontalAlignment.Center,
 			VerticalAlignment = Enum.VerticalAlignment.Center,
+		}),
+		Corner = React.createElement("UICorner", {
+			CornerRadius = Constants.DefaultCornerRadius,
+		}),
+		Stroke = React.createElement("UIStroke", {
+			Thickness = 2,
+			ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+			Transparency = 0,
+			Color = backColor
 		}),
 		Icon = props.Icon and React.createElement("ImageLabel", {
 			Image = props.Icon.Image,

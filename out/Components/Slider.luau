@@ -191,6 +191,15 @@ local function Slider(props: SliderProps)
 		[React.Event.InputChanged] = inputChanged,
 		[React.Event.InputEnded] = inputEnded,
 	}, {
+		Stroke = React.createElement("UIStroke", {
+			Thickness = 2,
+			ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+			Transparency = .3,
+			Color = theme:GetColor(Enum.StudioStyleGuideColor.Border, handleModifier)
+		}),
+		Corner = React.createElement("UICorner", {
+			CornerRadius = Constants.DefaultCornerRadius,
+		}),
 		Bar = React.createElement("Frame", {
 			ZIndex = 1,
 			AnchorPoint = Vector2.new(0, 0.5),
@@ -218,6 +227,10 @@ local function Slider(props: SliderProps)
 				BorderSizePixel = 1,
 				BorderColor3 = handleBorder:Lerp(handleFill, props.Disabled and 0.5 or 0),
 				BackgroundColor3 = handleFill,
+			}, {
+				Corner = React.createElement("UICorner", {
+					CornerRadius = UDim.new(1,0),
+				})
 			}),
 		}),
 	})

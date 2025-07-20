@@ -339,6 +339,15 @@ local function Dropdown(props: DropdownProps)
 		end,
 		ref = buttonRef,
 	}, {
+		Stroke = React.createElement("UIStroke", {
+			Thickness = 2,
+			ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+			Transparency = .5,
+			Color = theme:GetColor(Enum.StudioStyleGuideColor.Border, modifier)
+		}),
+		Corner = React.createElement("UICorner", {
+			CornerRadius = Constants.DefaultCornerRadius,
+		}),
 		Overlay = window and overlay and ReactRoblox.createPortal(overlay, window),
 		Label = React.createElement("TextLabel", {
 			Position = UDim2.fromOffset(5, 0),

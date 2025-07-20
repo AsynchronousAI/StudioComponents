@@ -180,6 +180,15 @@ local function BaseTextInput(props: BaseTextInputProps)
 			setContainerSize(rbx.AbsoluteSize - Vector2.new(rightPaddingExtra, 0))
 		end,
 	}, {
+		Stroke = React.createElement("UIStroke", {
+			Thickness = 2,
+			ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+			Transparency = .5,
+			Color = theme:GetColor(Enum.StudioStyleGuideColor.InputFieldBorder, borderModifier)
+		}),
+		Corner = React.createElement("UICorner", {
+			CornerRadius = Constants.DefaultCornerRadius,
+		}),
 		Clipping = React.createElement("Frame", {
 			Size = UDim2.new(1, -rightPaddingExtra, 1, 0),
 			BackgroundTransparency = 1,

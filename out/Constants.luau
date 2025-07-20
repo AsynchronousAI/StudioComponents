@@ -14,12 +14,17 @@ local Constants = {}
 --- @within Constants
 --- @prop DefaultFont Font
 --- The default font for text.
-Constants.DefaultFont = Enum.Font.SourceSans
+Constants.DefaultFont = Enum.Font.BuilderSansMedium
 
 --- @within Constants
 --- @prop DefaultTextSize number
 --- The default size for text.
-Constants.DefaultTextSize = 14
+Constants.DefaultTextSize = 16
+
+--- @within Constants
+--- @prop DefaultCornerRadius number
+--- The default corner radus.
+Constants.DefaultCornerRadius = UDim.new(.1,0)
 
 --- @within Constants
 --- @prop DefaultButtonHeight number

@@ -10,6 +10,10 @@ type IScrollFrame = CommonProps &
 				ClassName?: string;
 				SortOrder?: Enum.SortOrder.LayoutOrder;
 			};
+			PaddingLeft?: UDim;
+			PaddingRight?: UDim;
+			PaddingTop?: UDim;
+			PaddingBottom?: UDim;
 		} & Pick<
 			ScrollingFrame,
 			"AnchorPoint" | "BorderSizePixel" | "LayoutOrder" | "Position" | "ScrollingDirection" | "Size" | "ZIndex"
